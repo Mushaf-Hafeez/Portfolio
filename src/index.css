@@ -6,6 +6,18 @@
   --font-poppins: "Poppins", sans-serif;
 }
 
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility col-center {
+  @apply flex flex-col items-center justify-center;
+}
+
+@utility abs-center {
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
 @utility bg-gradient {
   background: radial-gradient(circle, #111111, #000000);
 }
@@ -64,17 +76,24 @@
 }
 
 @utility hero-filled-title {
-  @apply absolute left-1/2 -translate-x-1/2 top-1/2  whitespace-nowrap text-[11vw] font-bold shadow selection;
+  @apply abs-center mt-40 whitespace-nowrap text-[11vw] font-bold shadow selection;
 }
 
 @utility hero-outlined-title {
-  @apply absolute z-50 left-1/2 -translate-x-1/2 top-1/2  whitespace-nowrap text-[11vw] font-bold text-stroke selection;
+  @apply abs-center mt-40 z-50  whitespace-nowrap text-[11vw] font-bold text-stroke selection;
 }
 
 @utility hero-white-gradient {
-  @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 rounded-full blur-3xl h-10/12 w-1/2 bg-zinc-300/20;
+  @apply abs-center rounded-full blur-3xl h-10/12 w-1/2 bg-zinc-300/20;
 }
 
 @utility hero-img {
   @apply absolute lg:-bottom-20 scale-80 z-40 w-full object-cover;
+}
+
+/* ==================================================
+                This is for About Section
+================================================== */
+@utility about-container {
+  @apply w-6/12 flex-center;
 }

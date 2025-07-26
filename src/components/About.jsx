@@ -1,7 +1,12 @@
 import React from "react";
 
 const About = () => {
-  return <section className="bg-gradient h-screen w-full">About</section>;
+  return (
+    <section className="h-screen w-full bg-gradient text-white">
+      {/* about container */}
+      <div className="about-container"></div>
+    </section>
+  );
 };
 
 export default About;
