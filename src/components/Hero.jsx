@@ -19,16 +19,35 @@ const Hero = () => {
     })
       .from(".hero-filled-title", {
         opacity: 0,
-        yPercent: 20,
+        // yPercent: 20,
       })
       .from(
         ".hero-outlined-title",
         {
           opacity: 0,
-          yPercent: 20,
+          // yPercent: 20,
         },
         "<"
       );
+
+    gsap.to(".hero-filled-title", {
+      yPercent: -100,
+      scrollTrigger: {
+        trigger: ".hero-container",
+        start: "top top",
+        end: "bottom center",
+        scrub: true,
+      },
+    });
+    gsap.to(".hero-outlined-title", {
+      yPercent: -100,
+      scrollTrigger: {
+        trigger: ".hero-container",
+        start: "top top",
+        end: "bottom center",
+        scrub: true,
+      },
+    });
   }, []);
 
   return (

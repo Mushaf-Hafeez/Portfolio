@@ -2,6 +2,10 @@
 
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --font-poppins: "Poppins", sans-serif;
 }
@@ -95,5 +99,9 @@
                 This is for About Section
 ================================================== */
 @utility about-container {
-  @apply w-6/12 flex-center;
+  @apply h-full w-6/12 mx-auto col-center text-center;
+}
+
+@utility about-download-btn {
+  @apply px-8 py-2 rounded-full bg-white/10 backdrop-blur-2xl text-white mt-4;
 }
