@@ -1,6 +1,30 @@
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 import { navItems } from "../constant";
 
 const Navbar = () => {
+  useGSAP(() => {
+    // create gsap timeline
+    const tl = gsap.timeline({ delay: 1, ease: "power1.inOut" });
+
+    // gsap animations
+    tl.from(".navbar", {
+      opacity: 0,
+      duration: 0.5,
+    })
+      .from(".nav-title", {
+        opacity: 0,
+      })
+      .from(
+        "ul",
+        {
+          opacity: 0,
+        },
+        "<"
+      );
+  }, []);
+
   return (
     <nav className="navbar">
       <h3 className="nav-title">

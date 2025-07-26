@@ -45,13 +45,36 @@
 ================================================== */
 
 @utility navbar {
-  @apply absolute z-[100] left-1/2 -translate-x-1/2 top-10 w-6/12 rounded-full px-20 py-5 text-white bg-white/10 backdrop-blur-2xl flex items-center justify-between;
+  @apply absolute z-[100] left-1/2 -translate-x-1/2 top-10 w-6/12 rounded-full px-10 py-5 text-white bg-white/10 backdrop-blur-2xl flex items-center justify-between;
 }
 
 @utility nav-title {
   @apply text-xl font-semibold cursor-pointer;
 }
 
+@utility selection {
+  @apply selection:bg-white selection:text-black;
+}
+
 /* ==================================================
                 This is for Hero Section
 ================================================== */
+@utility hero-container {
+  @apply relative h-full w-full bg-gradient text-white;
+}
+
+@utility hero-filled-title {
+  @apply absolute left-1/2 -translate-x-1/2 top-1/2  whitespace-nowrap text-[11vw] font-bold shadow selection;
+}
+
+@utility hero-outlined-title {
+  @apply absolute z-50 left-1/2 -translate-x-1/2 top-1/2  whitespace-nowrap text-[11vw] font-bold text-stroke selection;
+}
+
+@utility hero-white-gradient {
+  @apply absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 rounded-full blur-3xl h-10/12 w-1/2 bg-zinc-300/20;
+}
+
+@utility hero-img {
+  @apply absolute lg:-bottom-20 scale-80 z-40 w-full object-cover;
+}
