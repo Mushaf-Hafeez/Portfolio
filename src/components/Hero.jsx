@@ -1,14 +1,43 @@
-import React from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 import Navbar from "./Navbar";
 
 const Hero = () => {
+  useGSAP(() => {
+    // create a timeline
+    const tl = gsap.timeline({
+      delay: 0.5,
+      ease: "power1.inOut",
+    });
+
+    // animate the hero image
+    tl.from(".hero-img", {
+      // yPercent: 100,
+      opacity: 0,
+      duration: 1,
+    })
+      .from(".hero-filled-title", {
+        opacity: 0,
+        yPercent: 20,
+      })
+      .from(
+        ".hero-outlined-title",
+        {
+          opacity: 0,
+          yPercent: 20,
+        },
+        "<"
+      );
+  }, []);
+
   return (
     <section className="h-screen w-full">
       {/* Navbar */}
       <Navbar />
 
       {/* hero container */}
-      <div className="hero-container">
+      <div className="hero-container overflow-hidden">
         {/* hero headings */}
         <div>
           <h1 className="hero-filled-title">MERN Developer</h1>
