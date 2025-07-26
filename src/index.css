@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+}
+
+@utility bg-gradient {
+  background: radial-gradient(circle, #111111, #000000);
+}
+
+@utility text-gradient {
+  background: linear-gradient(
+    to right,
+    oklch(70.5% 0.015 286.067) 0%,
+    oklch(98.5% 0.002 247.839) 20%,
+    oklch(70.5% 0.015 286.067) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility shadow {
+  text-shadow: 10px 20px 20px #111;
+}
+
+@utility bg-gradient {
+  background: radialGradient(
+    at center,
+    oklch(37% 0.013 285.805),
+    oklch(14.1% 0.005 285.823)
+  );
+}
+
+@utility text-stroke {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+/* ==================================================
+                This is for Navbar
+================================================== */
+
+@utility navbar {
+  @apply absolute z-[100] left-1/2 -translate-x-1/2 top-10 w-6/12 rounded-full px-20 py-5 text-white bg-white/10 backdrop-blur-2xl flex items-center justify-between;
+}
+
+@utility nav-title {
+  @apply text-xl font-semibold cursor-pointer;
+}
+
+/* ==================================================
+                This is for Hero Section
+================================================== */
