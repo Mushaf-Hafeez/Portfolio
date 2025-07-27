@@ -11,6 +11,7 @@ const Navbar = () => {
     // gsap animations
     tl.from(".navbar", {
       opacity: 0,
+      scale: 0,
       duration: 0.5,
     })
       .from(".nav-title", {
