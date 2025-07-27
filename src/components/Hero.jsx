@@ -19,13 +19,11 @@ const Hero = () => {
     })
       .from(".hero-filled-title", {
         opacity: 0,
-        // yPercent: 20,
       })
       .from(
         ".hero-outlined-title",
         {
           opacity: 0,
-          // yPercent: 20,
         },
         "<"
       );
