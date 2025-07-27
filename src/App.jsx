@@ -6,6 +6,7 @@ import { ReactLenis, useLenis } from "lenis/react";
 
 import About from "./components/About";
 import Hero from "./components/Hero";
+import Technolgoies from "./components/Technolgoies";
 
 // register gsap plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -18,7 +19,8 @@ const App = () => {
       <ReactLenis root />
       <Hero />
       <About />
-      <div className="min-h-dvh bg-gradient"></div>
+      <Technolgoies />
+      {/* <div className="min-h-dvh bg-gradient"></div> */}
     </main>
   );
 };

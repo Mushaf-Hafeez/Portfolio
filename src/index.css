@@ -103,5 +103,5 @@ html {
 }
 
 @utility about-download-btn {
-  @apply px-8 py-2 rounded-full bg-white/10 backdrop-blur-2xl text-white mt-4;
+  @apply px-8 py-3 bg-white/10 rounded-full backdrop-blur-2xl text-white mt-4;
 }
