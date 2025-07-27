@@ -18,7 +18,7 @@ const About = () => {
       scrollTrigger: {
         trigger: "#about",
         start: "top top",
-        end: "center top",
+        end: "90% top",
         scrub: true,
         pin: true,
       },
@@ -37,7 +37,7 @@ const About = () => {
       })
       .from(splitContent.words, {
         opacity: 0.1,
-        stagger: 0.05,
+        stagger: 0.3,
       })
       .from(".about-download-btn", {
         opacity: 0,
