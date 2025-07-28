@@ -51,15 +51,6 @@ const Technolgoies = () => {
             className={`h-32`}
           />
         ))}
-        {/* {allIcons.map(({ path, title }, index) => (
-          <img
-            title={title}
-            key={index}
-            src={path}
-            alt="Error while rendering the image"
-            className={`h-40 ${index == 9 && "invert"}`}
-          />
-        ))} */}
       </div>
     </section>
   );
