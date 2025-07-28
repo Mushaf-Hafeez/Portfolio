@@ -6,6 +6,7 @@ import {
   allIcons,
   backendIcons,
   frontendIcons,
+  logos,
   toolsIcons,
 } from "../constants";
 import { useRef } from "react";
@@ -41,7 +42,16 @@ const Technolgoies = () => {
       className="flex-col gap-10 py-10 bg-gradient text-white overflow-x-hidden"
     >
       <div id="all-icons" className="bg-transparent flex gap-10 items-center">
-        {allIcons.map(({ path, title }, index) => (
+        {logos.map(({ path, title }, index) => (
+          <img
+            title={title}
+            key={index}
+            src={path}
+            alt="Error while rendering the image"
+            className={`h-32`}
+          />
+        ))}
+        {/* {allIcons.map(({ path, title }, index) => (
           <img
             title={title}
             key={index}
@@ -49,7 +59,7 @@ const Technolgoies = () => {
             alt="Error while rendering the image"
             className={`h-40 ${index == 9 && "invert"}`}
           />
-        ))}
+        ))} */}
       </div>
     </section>
   );
