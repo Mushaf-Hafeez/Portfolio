@@ -1,12 +1,13 @@
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { ScrollTrigger, SplitText } from "gsap/all";
 
 import { ReactLenis, useLenis } from "lenis/react";
 
-import About from "./components/About";
-import Hero from "./components/Hero";
-import Technolgoies from "./components/Technolgoies";
+import About from "./sections/About";
+import Hero from "./sections/Hero";
+import Technolgoies from "./sections/Technolgoies";
+
+import { Button } from "./components/ui/button";
 
 // register gsap plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
