@@ -1,14 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
 
-import {
-  allIcons,
-  backendIcons,
-  frontendIcons,
-  logos,
-  toolsIcons,
-} from "../constants";
+import { logos } from "../constants";
 import { useRef } from "react";
 
 const Technolgoies = () => {
@@ -19,7 +12,7 @@ const Technolgoies = () => {
     const tl = gsap.timeline();
 
     tl.to("#all-icons", {
-      x: -2830,
+      x: -2000,
       duration: 10,
       repeat: -1,
       yoyo: true,
