@@ -40,3 +40,22 @@ export const logos = [
   { path: "/images/logos/vscode.png", title: "VS Code" },
   { path: "/images/logos/postman.png", title: "Postman" },
 ];
+
+// project section slider images
+export const sliderImages = [
+  {
+    src: "/images/slider-1.png",
+    alt: "Image 1",
+    link: "https://e-commerce-frontend-eight-alpha.vercel.app",
+  },
+  {
+    src: "/images/slider-2.png",
+    alt: "Image 2",
+    link: "https://chat-app-frontend-nine-theta.vercel.app",
+  },
+  {
+    src: "/images/slider-3.png",
+    alt: "Image 3",
+    link: "https://mern-memories-frontend.vercel.app",
+  },
+];

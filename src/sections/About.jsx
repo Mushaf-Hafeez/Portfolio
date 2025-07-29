@@ -12,7 +12,7 @@ const About = () => {
     const splitContent = SplitText.create("#about-content", { type: "words" });
 
     // create the timeline
-    const tl = gsap.timeline({
+    const tl1 = gsap.timeline({
       delay: 1,
       ease: "power1.inOut",
       scrollTrigger: {
@@ -23,18 +23,29 @@ const About = () => {
         pin: true,
       },
     });
+    const tl2 = gsap.timeline({
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: "#about",
+        start: "top 70%",
+        end: "center top",
+      },
+    });
 
     // animate the greeting title
-    tl.from(splitGreet.chars, {
-      opacity: 0,
-      yPercent: 10,
-      stagger: 0.05,
-    })
-      .from(splitName.chars, {
+    tl2
+      .from(splitGreet.chars, {
         opacity: 0,
-        yPercent: 10,
+        yPercent: 30,
         stagger: 0.05,
       })
+      .from(splitName.chars, {
+        opacity: 0,
+        yPercent: 30,
+        stagger: 0.05,
+      });
+
+    tl1
       .from(splitContent.words, {
         opacity: 0.1,
         stagger: 0.3,
@@ -51,7 +62,7 @@ const About = () => {
       <div className="about-container">
         <h1 className="text-8xl font-bold selection">
           <p id="greet-title">Hi, I'm</p>
-          <h2 id="name">Mushaf Hafeez</h2>
+          <p id="name">Mushaf Hafeez</p>
         </h1>
 
         {/* description */}
