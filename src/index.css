@@ -14,6 +14,21 @@ html {
   --font-poppins: "Poppins", sans-serif;
 }
 
+/* this code is use to remove the default styling that browser apply */
+@layer utilities {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    @apply bg-[#09090b] text-white;
+    -webkit-box-shadow: 0 0 0px 1000px #0d0d0d inset;
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
 @utility flex-center {
   @apply flex items-center justify-center;
 }

@@ -66,15 +66,15 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="h-screen w-full bg-gradient text-white py-20"
+      className="h-screen w-full bg-gradient text-white py-20 selection"
     >
       <div className="h-full w-full col-center">
-        <h1 id="contact-title" className="text-8xl font-bold selection mb-5">
+        <h1 id="contact-title" className="text-8xl font-bold mb-5">
           Contact me
         </h1>
         <p
           id="contact-description"
-          className="text-md w-11/12 mx-auto text-center text-zinc-400"
+          className="text-md max-w-3/12 mx-auto text-center text-zinc-400"
         >
           Please feel free to contact me and I will get back to you as soon as I
           can
