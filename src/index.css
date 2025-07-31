@@ -110,6 +110,18 @@ html {
   @apply px-8 py-3 bg-white/10 rounded-full backdrop-blur-2xl text-white mt-4;
 }
 
+/* ==================================================
+                This is for Contact us Section
+================================================== */
+
+@utility input {
+  @apply w-full py-2 text-white outline-none border-b-2 border-white/10;
+}
+
+@utility submit-btn {
+  @apply py-2 backdrop-blur-2xl bg-white/10 rounded-full cursor-pointer;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

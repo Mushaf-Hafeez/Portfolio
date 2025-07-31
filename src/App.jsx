@@ -7,6 +7,7 @@ import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Technolgoies from "./sections/Technolgoies";
 import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 // register gsap plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -21,6 +22,7 @@ const App = () => {
       <About />
       <Technolgoies />
       <Projects />
+      <Contact />
       <div className={"min-h-dvh bg-gradient"}></div>
     </main>
   );
