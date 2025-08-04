@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-gradient text-white px-16 py-10 selection">
-      <div className="flex-center justify-between ">
+      <div className="flex-center justify-between">
         {/* left side of the footer */}
         <div className="flex-center gap-2">
           <p>&copy;{new Date().getFullYear()}</p>
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
 
         {/* right side of the footer */}
-        <div className="flex-center gap-1">
+        <div className="flex-center gap-2">
           <a href="https://www.linkedin.com/in/mushafhafeez" target="_blank">
             <TiSocialLinkedin size={28} />
           </a>
