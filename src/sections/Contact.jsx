@@ -69,12 +69,15 @@ const Contact = () => {
       className="h-screen w-full bg-gradient text-white py-20 selection"
     >
       <div className="h-full w-full col-center">
-        <h1 id="contact-title" className="text-8xl font-bold mb-5">
+        <h1
+          id="contact-title"
+          className="text-4xl md:text-6xl lg:text-8xl font-bold mb-5"
+        >
           Contact me
         </h1>
         <p
           id="contact-description"
-          className="text-md max-w-3/12 mx-auto text-center text-zinc-400"
+          className="text-xs md:text-md lg:text-lg max-w-7/12 md:max-w-5/12 lg:max-w-3/12 mx-auto text-center text-zinc-400"
         >
           Please feel free to contact me and I will get back to you as soon as I
           can
@@ -82,7 +85,7 @@ const Contact = () => {
         <form
           id="contact-form"
           onSubmit={handleSubmit}
-          className="h-full w-3/12 col-center gap-5"
+          className="h-full w-9/12 md:w-4/12 lg:w-3/12 col-center gap-5"
         >
           <input
             type="text"

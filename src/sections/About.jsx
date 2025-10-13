@@ -60,13 +60,16 @@ const About = () => {
     <section id="about" className="h-screen w-full bg-gradient text-white">
       {/* about container */}
       <div className="about-container">
-        <h1 className="text-8xl font-bold selection">
+        <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold selection whitespace-nowrap">
           <p id="greet-title">Hi, I'm</p>
           <p id="name">Mushaf Hafeez</p>
         </h1>
 
         {/* description */}
-        <p id="about-content" className="text-2xl leading-10 selection">
+        <p
+          id="about-content"
+          className="text-sm md:text-md lg:text-2xl lg:leading-10 selection"
+        >
           A MERN Stack Developer. I build full-stack web apps with MongoDB,
           Express, React, and Node.js, focusing on clean UI, secure backend, and
           real-time features. I love turning ideas into useful, scalable
@@ -80,8 +83,8 @@ const About = () => {
           download={"Mushaf-Hafeez-CV.pdf"}
           className="about-download-btn flex-center gap-2 selection"
         >
-          <span>Download CV</span>
-          <ArrowDownToLine size={20} />
+          <span className="text-xs lg:text-lg">Download CV</span>
+          <ArrowDownToLine size={20} className="size-3 md:size-4 lg:size-6" />
         </a>
       </div>
     </section>

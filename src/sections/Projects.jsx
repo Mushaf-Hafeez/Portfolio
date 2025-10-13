@@ -29,12 +29,12 @@ const Projects = () => {
   return (
     <section
       id="project"
-      className="min-h-screen w-full bg-gradient text-white py-20"
+      className="min-h-fit w-full bg-gradient text-white py-20"
     >
       {/* title */}
       <h1
         id="project-title"
-        className="text-8xl font-bold selection text-center"
+        className="text-4xl md:text-6xl lg:text-8xl font-bold selection text-center"
       >
         Projects
       </h1>

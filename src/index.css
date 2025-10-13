@@ -80,7 +80,7 @@ html {
 ================================================== */
 
 @utility navbar {
-  @apply absolute z-[100] left-1/2 -translate-x-1/2 top-10 w-6/12 rounded-full px-10 py-5 text-white bg-white/10 backdrop-blur-2xl flex items-center justify-between;
+  @apply absolute z-[100] left-1/2 -translate-x-1/2 top-10 w-6/12 rounded-full px-10 py-3 text-white bg-white/10 backdrop-blur-2xl flex items-center justify-between;
 }
 
 @utility nav-title {
@@ -118,11 +118,11 @@ html {
                 This is for About Section
 ================================================== */
 @utility about-container {
-  @apply h-full w-6/12 mx-auto col-center text-center;
+  @apply h-full w-11/12 md:w-9/12 lg:w-6/12 mx-auto col-center gap-2 text-center;
 }
 
 @utility about-download-btn {
-  @apply px-8 py-3 bg-white/10 rounded-full backdrop-blur-2xl text-white mt-4;
+  @apply px-2 py-1 md:px-4 md:py-2 lg:px-8 lg:py-3 bg-white/10 rounded-full backdrop-blur-2xl text-white lg:mt-4;
 }
 
 /* ==================================================
@@ -130,11 +130,11 @@ html {
 ================================================== */
 
 @utility input {
-  @apply w-full py-2 text-white outline-none border-b-2 border-white/10;
+  @apply w-full text-sm lg:text-lg py-2 text-white outline-none border-b-2 border-white/10;
 }
 
 @utility submit-btn {
-  @apply py-2 backdrop-blur-2xl bg-white/10 rounded-full cursor-pointer;
+  @apply text-xs lg:text-lg py-2 backdrop-blur-2xl bg-white/10 rounded-full cursor-pointer;
 }
 
 @theme inline {

@@ -32,7 +32,7 @@ const Technolgoies = () => {
     <section
       id="tech"
       ref={techRef}
-      className="flex-col gap-10 py-10 bg-gradient text-white overflow-x-hidden"
+      className="flex-col gap-10 py-10 bg-zinc-900 text-white overflow-x-hidden"
     >
       <div id="all-icons" className="bg-transparent flex gap-10 items-center">
         {logos.map(({ path, title }, index) => (
@@ -41,7 +41,7 @@ const Technolgoies = () => {
             key={index}
             src={path}
             alt="Error while rendering the image"
-            className={`h-32`}
+            className={"h-16 md:h-24 lg:h-32"}
           />
         ))}
       </div>

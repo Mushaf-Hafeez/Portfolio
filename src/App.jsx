@@ -25,7 +25,6 @@ const App = () => {
       <Projects />
       <Contact />
       <Footer />
-      {/* <div className={"min-h-dvh bg-gradient"}></div> */}
     </main>
   );
 };

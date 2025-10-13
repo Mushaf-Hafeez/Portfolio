@@ -49,7 +49,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="h-screen w-full">
+    <section className="hidden lg:block h-screen w-full">
       {/* Navbar */}
       <Navbar />
 
