@@ -77,10 +77,11 @@ const About = () => {
         </p>
 
         {/* resume download button */}
+
         <a
           title="Download CV"
-          href="/pdfs/Mushaf-Hafeez-CV.pdf"
-          download={"Mushaf-Hafeez-CV.pdf"}
+          href="/pdfs/Mushaf_Hafeez_MERN_CV_2026.pdf"
+          download={"Mushaf_Hafeez_MERN_CV_2026.pdf"}
           className="about-download-btn flex-center gap-2 selection"
         >
           <span className="text-xs lg:text-lg">Download CV</span>
