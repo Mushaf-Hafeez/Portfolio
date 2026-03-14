@@ -80,7 +80,7 @@ const About = () => {
 
         <a
           title="Download CV"
-          href="/pdfs/Mushaf_Hafeez_MERN_CV_2026.pdf"
+          href="/pdfs/Mushaf_Hafeez_MERN_CV.pdf"
           download={"Mushaf_Hafeez_MERN_CV.pdf"}
           className="about-download-btn flex-center gap-2 selection"
         >
