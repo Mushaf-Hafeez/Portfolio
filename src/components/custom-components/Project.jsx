@@ -28,7 +28,6 @@ const Project = ({ project }) => {
         trigger: "#project",
         start: "top 50%",
         end: "top -40",
-        markers: true,
         scrub: true,
       },
     });
