@@ -1,52 +1,18 @@
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger, SplitText } from "gsap/all";
+import React from "react";
 
-import { sliderImages } from "@/constants";
-
-import CardCarousel from "../components/CardCarousel";
+// importing data
+import { projects } from "@/constants";
+import Project from "@/components/custom-components/Project";
 
 const Projects = () => {
-  useGSAP(() => {
-    // split the title into characters
-    const splitProjectTitle = SplitText.create("#project-title", {
-      type: "chars",
-    });
-
-    // animate the title
-    gsap.from(splitProjectTitle.chars, {
-      opacity: 0,
-      yPercent: 100,
-      stagger: 0.02,
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: "#project",
-        start: "top 70%",
-      },
-    });
-  }, []);
-
   return (
     <section
       id="project"
-      className="min-h-fit w-full bg-gradient text-white py-20"
+      className="min-h-screen w-full bg-gradient text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 md:px-16 lg:px-40 pt-20 gap-4"
     >
-      {/* title */}
-      <h1
-        id="project-title"
-        className="text-4xl md:text-6xl lg:text-8xl font-bold selection text-center"
-      >
-        Projects
-      </h1>
-
-      <div>
-        <CardCarousel
-          images={sliderImages}
-          autoplayDelay={2000}
-          showPagination={true}
-          showNavigation={true}
-        />
-      </div>
+      {projects.map((project, index) => (
+        <Project key={project.id} project={project} />
+      ))}
     </section>
   );
 };
