@@ -10,14 +10,32 @@ import {
   CardTitle,
   CardContent,
 } from "@/components/ui/card";
-import { ArrowRight, ArrowUpRight, Link } from "lucide-react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ArrowUpRight } from "lucide-react";
 
 const Project = ({ project }) => {
   const { id, tag, status, name, description, techStack, github, live } =
     project;
 
+  useGSAP(() => {
+    gsap.to(".cards", {
+      opacity: 100,
+      duration: 0.3,
+      stagger: 2,
+      ease: "power1.inOut",
+      scrollTrigger: {
+        trigger: "#project",
+        start: "top 50%",
+        end: "top -40",
+        markers: true,
+        scrub: true,
+      },
+    });
+  });
+
   return (
-    <Card className="card flex justify-between relative mx-auto w-full max-w-sm bg-primary border border-stone-600 hover:shadow-2xl hover:shadow-stone-800/50 hover:scale-101 duration-200 cursor-pointer">
+    <Card className="opacity-0 cards flex justify-between relative mx-auto w-full max-w-sm bg-primary border border-stone-600 hover:shadow-2xl hover:shadow-stone-800/50 hover:scale-101 duration-200 cursor-pointer">
       <CardHeader>
         <Badge variant={"secondary"} className={"bg-zinc-400/25 text-white"}>
           {tag}
